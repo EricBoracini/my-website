@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embed ChatGPT Page</title>
+    <title>ChatGPT Redirect</title>
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .container {
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
-            background-color: #f0f0f0;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #00aaff, #00ffaa);
+            font-family: Arial, sans-serif;
         }
-        .iframe-container {
-            width: 80%;
-            height: 80%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .button-container {
+            text-align: center;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
+        .btn {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #007acc;
             border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #005fa3;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="iframe-container">
-            <iframe src="https://chat.openai.com/chat"></iframe>
-        </div>
+    <div class="button-container">
+        <a href="https://www.chatgpt.com" class="btn">Go to ChatGPT</a>
     </div>
 </body>
 </html>
