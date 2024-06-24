@@ -3,39 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT Redirect</title>
+    <title>Dark Page with ChatGPT Button</title>
     <style>
         body {
+            background-color: #1e1e1e;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #00aaff, #00ffaa);
             font-family: Arial, sans-serif;
         }
-        .button-container {
-            text-align: center;
-        }
-        .btn {
-            padding: 15px 30px;
-            font-size: 20px;
-            color: #fff;
-            background-color: #007acc;
+        .button {
+            background-color: #4CAF50;
             border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
             text-decoration: none;
-        }
-        .btn:hover {
-            background-color: #005fa3;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
         }
     </style>
 </head>
 <body>
-    <div class="button-container">
-        <a href="https://www.chatgpt.com" class="btn">Go to ChatGPT</a>
-    </div>
+    <button class="button" onclick="window.location.href='https://www.openai.com/chatgpt'">Go to ChatGPT</button>
 </body>
 </html>
